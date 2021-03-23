@@ -10,6 +10,7 @@ class TimeInRanges : public MPxNode {
         static void* creator();
         static MStatus initialize();
         static MTypeId id;
+    private:
         static MObject disable;
         static MObject ranges;
         static MObject startFrame;
