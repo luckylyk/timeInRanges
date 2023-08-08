@@ -39,7 +39,7 @@ def remove_node_from_shot_range_visibility(node, shot):
     try:
         attr = node + ".lodVisibility"
         time_in_ranges = cmds.listConnections(attr, type="timeInRanges")[0]
-    except IndexError:
+    except TypeError:
         # Shot is not connected to any shot.
         return
     if shot not in (cmds.listConnections(time_in_ranges, type="shot") or []):

@@ -13,6 +13,7 @@ class TimeInRanges : public MPxNode {
     private:
         static MObject disable;
         static MObject ranges;
+        static MObject path;
         static MObject startFrame;
         static MObject endFrame;
         static MObject output;
